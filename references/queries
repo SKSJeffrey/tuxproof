@@ -1,0 +1,8 @@
+# Drop one MySQL table at a time
+sed -n -e '/DROP TABLE.*`cs_order`/,/UNLOCK TABLES/p' 20150813_02_00_01_CS_Portal.sql > cs_order.sql
+
+# InnoDB Buffer Pool usage in GB
+SELECT FORMAT(BufferPoolPages*PageSize/POWER(1024,3),2) BufferPoolDataGB FROM (SELECT variable_value BufferPoolPages FROM information_schema.global_status WHERE variable_name = 'Innodb_buffer_pool_pages_data') A, (SELECT variable_value PageSize FROM information_schema.global_status WHERE variable_name = 'Innodb_page_size') B;
+
+# InnoDB Buffer Pool usage in %
+SELECT CONCAT(FORMAT(DataPages*100.0/TotalPages,2),' %') BufferPoolDataPercentage FROM (SELECT variable_value DataPages FROM information_schema.global_status WHERE variable_name = 'Innodb_buffer_pool_pages_data') A, (SELECT variable_value TotalPages FROM information_schema.global_status WHERE variable_name = 'Innodb_buffer_pool_pages_total') B;
