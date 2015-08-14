@@ -1,0 +1,9 @@
+SKS-CORE-SW: 10.1.1.253
+`telnet 10.1.1.253`
+Password: over
+
+SKS SW1: 192.168.1.1
+`ssh ciscosks@192.168.1.1`
+Password: con
+
+SKS SW5: 10.1.1.224
