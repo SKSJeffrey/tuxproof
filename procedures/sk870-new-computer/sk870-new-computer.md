@@ -4,16 +4,14 @@
 
 ## Purpose: Ensure that a new computer has the proper configurations for daily operation 
 ___
-### Remove an old computer
 **Unjoin** computer from the SKS domain - Administrator: Windows Powershell
 ```bash
-remove-computer -cred "SKS\Jeffrey Wen"; shutdown -r -t 0
+Remove-Computer -Credential "SKS\Domain-Administrator"; Restart-Computer
 ```
 ___
-### Add a new computer
 **Join** computer to the SKS domain - Administrator: Windows Powershell
 ```bash
-add-computer -domain sks.com -cred "SKS\Jeffrey Wen"; shutdown -r -t 0
+Add-Computer -DomainName sks.com -Credential "SKS\Domain-Administrator"; Restart-Computer
 ```
 ___
 ### Connect peripherals
