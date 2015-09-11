@@ -1,19 +1,11 @@
-% SK870 - How to Setup a New Computer
-% 2015-08-18
-% Jeffrey Wen
+# SK870 - How to Setup a New Computer
+## Purpose - Ensure that a new computer has the proper configurations for daily operation 
+## Procedure - 
 
-## Purpose: Ensure that a new computer has the proper configurations for daily operation 
-___
-**Unjoin** computer from the SKS domain - Administrator: Windows Powershell
-```bash
-Remove-Computer -Credential "SKS\Domain-Administrator"; Restart-Computer
-```
-___
-**Join** computer to the SKS domain - Administrator: Windows Powershell
-```bash
-Add-Computer -DomainName sks.com -Credential "SKS\Domain-Administrator"; Restart-Computer
-```
-___
+Run as Administrator: PowerShell
+
+`Add-Computer -DomainName SKS.com -Credential "SKS.com\AdministrativeUser"`
+
 ### Connect peripherals
 Install the necessary drivers for printers and scanners
 
