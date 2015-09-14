@@ -1,6 +1,6 @@
 #SKXXX - How to Setup a Ship Station
 ## Purpose - Ensure the Ship Station has the necessary tools for daily operation
-## Procedure -
+## Procedure
 
 ## Ship station client software
 Run as Administrator: PowerShell ISE
