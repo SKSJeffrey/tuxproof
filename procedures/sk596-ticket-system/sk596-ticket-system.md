@@ -1,9 +1,5 @@
-% SK596 - Using the IT Ticket System
-% 2015-08-18
-% Jeffrey Wen
-
+# SK596 - Using the IT Ticket System
 ## Purpose: Properly submit a ticket to the Web and IT department for review and resolution
-___
 Log into SKS-Connect and click on the **Ticket Icon** on the top menu
 
 ![](sk596-ticket.jpg)
