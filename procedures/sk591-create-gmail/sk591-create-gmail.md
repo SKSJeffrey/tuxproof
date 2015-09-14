@@ -1,9 +1,6 @@
-% SK591 - How to Setup a New Gmail Account
-% 2015-08-20
-% Jeffrey Wen
-
+# SK591 - How to Setup a New Gmail Account
 ## Purpose: Ensure an employee can send and receive messages worldwide
-___
+## Procedure
 Visit https://admin.google.com and sign in with an Administrator SKS Gmail account
 
 On the Admin Console, select **Users**
