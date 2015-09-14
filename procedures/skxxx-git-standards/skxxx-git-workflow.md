@@ -1,6 +1,6 @@
 # SKXXX - Git Workflow
 ## Purpose - Standardize the development process to ensure master is always Production quality
-## Policy - 
+## Policy
 
 ## Overview of the Git Workflow
 ```bash
