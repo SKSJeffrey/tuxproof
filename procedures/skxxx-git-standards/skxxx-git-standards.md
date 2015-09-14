@@ -1,6 +1,6 @@
 # SKXXX - How to Write a Great Git Commit Message
 ## Purpose - Standardize Git commit messages with descriptive messages for future selves
-## Policy - 
+## Policy
 
 ## 1. Separate subject from body
 ```bash
