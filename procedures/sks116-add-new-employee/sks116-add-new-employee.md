@@ -18,14 +18,22 @@
 * [ ] Assign an iPhone
 * [ ] Assign an iPad
 
-## Office - Web and Information Technology
+## Office - Web
+* [ ] Create user in Active Directory Users and Computers
+* [ ] Create user in SKS-Connect
+* [ ] Create user in SKS-PolyPro
+* [ ] Create user in Google Apps
+* [ ] Create user in GitHub
+* [ ] Associate a keyfob with the user
+* [ ] Create local development environment
+* [ ] Create SSH private/public key pair
+
+## Office - Information Technology
 * [ ] Create user in Active Directory Users and Computers
 * [ ] Create user in SKS-Connect
 * [ ] Create user in SKS-PolyPro
 * [ ] Create user in Google Apps
 * [ ] Associate a keyfob with the user
-* [ ] Create local development environment
-* [ ] Create SSH private/public key pair
 
 ## Warehouse - Receiving, Kitroom, Shipping, and Common Carrier
 * [ ] Create user in Active Directory Users and Computers
