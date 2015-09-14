@@ -1,6 +1,6 @@
 # SK870 - How to Setup a New Computer
 ## Purpose - Ensure that a new computer has the proper configurations for daily operation 
-## Procedure - 
+## Procedure
 
 Run as Administrator: PowerShell
 
