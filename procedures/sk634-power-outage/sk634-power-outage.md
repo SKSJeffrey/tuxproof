@@ -1,4 +1,4 @@
-# SKXXX - Planned Power Outage
+# SK634 - Planned Power Outage
 ## Purpose - Properly shutdown server room equipment
 ## Procedure
 
@@ -76,9 +76,10 @@ Unplug the Firewall
 The procedure would be the opposite 
 
 ## Common Issues
-When all of the equipment is powered on, there may be no Internet access. This is related to duplicate VMs on both of the ESXI hosts. In order to resolve this issue, it would require a Windows computer with the vSphere client.
+When all of the equipment is powered on, there may be no Internet access. This is related to duplicate VMs on both of the ESXI hosts. In order to resolve this issue, it would require a Windows computer with a vSphere client.
 
 Log into vSphere with **one** of the following credentials:
+
 IP Address/Name: 10.1.1.223  
 User name: root  
 Password: \$k\$B0tt13  
