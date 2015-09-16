@@ -9,9 +9,9 @@
 3. $ git checkout -b proj/sks-reports
 4. $ git commit -S
 5. $ git checkout master
-6. $ git merge --no-ff --verify-signatures proj/sks-reports
-7. $ git branch -d proj/sks-reports
-8. $ git push origin master
+6. $ git merge --no-ff --verify-signatures -S proj/sks-reports
+7. $ git push origin master
+8. $ git branch -d proj/sks-reports
 ```
 
 ## 1. $ git fetch upstream
@@ -32,8 +32,8 @@ After proj/sks-reports is completed, you will have to prepare to merge it back i
 ## 6. $ git merge \-\-no-ff \-\-verify-signatures proj/sks-reports
 Merging proj/sks-reports back into your local master branch with the recursive strategy. At the same time, the GPG signature will be verified.
 
-## 7. $ git branch -d proj/sks-reports
-Assuming proj/sks-reports works flawlessly, you can delete the local branch.
-
-## 8. $ git push origin master
+## 7. $ git push origin master
 Push the reports into your remote origin master so a Pull Request can be initiated
+
+## 8. $ git branch -d proj/sks-reports
+Assuming proj/sks-reports works flawlessly, you can delete the local branch.
