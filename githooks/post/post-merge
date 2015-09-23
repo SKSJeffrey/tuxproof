@@ -1,0 +1,39 @@
+#!/bin/bash
+
+set -o nounset
+set -o errexit
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BOLD=$( (tput bold) )
+NORMAL=$( (tput sgr 0) )
+NC='\033[0m'
+
+# GIT_DIR is an unused variable; requiring 'export' if the script utilizes it in some way
+#  GIT_DIR is unused but required for git commands to process correctly
+readonly export GIT_DIR=/var/www/$(whoami)/SKS-Connect/.git
+readonly GIT_WORK_TREE=/var/www/$(whoami)/SKS-Connect
+
+# Matches: `getent passwd | awk -F: '{print $1}'` to the directory name in the web root
+readonly USER_DIR=$( (cd /var/www && ls -1) )
+for USER in ${USER_DIR}; do
+        if [ "${USER}" == "$(whoami)" ]; then
+                echo -e "\n${RED}${BOLD}Verified User${NORMAL}${NC}"
+                echo -e "\t${RED}[[${NC}${GREEN} $(whoami) ${NC}${RED}]]${NC}"
+        else
+                continue
+        fi
+done
+
+echo -e "\n${RED}${BOLD}Development SKS-Connect Web Development Server${NC}${NORMAL}"
+echo -e "\t${RED}[[${NC} ${GREEN}Post-Update Git Hook${NC} ${RED}]]${NC}"
+echo -e "\t\t${RED}=> Change ownership of GIT_WORK_TREE to uid=1008:gid=1008${NC}\n"
+
+# Change all directories/* to uid=gid=1008 to maintain proper ownership privileges
+sudo chown -R development:development "${GIT_WORK_TREE}"
+
+if [ $? = 0 ]; then
+        echo -e "${RED}${BOLD}Post-Update Git Hook${NORMAL}${NC}\n\t${RED}[[${NC} ${GREEN}Successful${NC} ${RED}]]${NC}\n"
+else
+        echo -e "${RED}${BOLD}Post-Update Git Hook${NORMAL}${NC}\n\t${RED}[[${NC} ${RED}Failed${NC} ${RED}]]${NC}\n"
+fi
