@@ -1,6 +1,10 @@
 # SK634 - Planned Power Outage
-## Purpose - Properly shutdown server room equipment
+## Purpose - Properly shut down all electrical equipment
 ## Procedure
+
+## General Office/Warehouse Equipment
+* Use SpecOps on Active Directory to remotely shut down all Windows Computers
+* SSH into each Linux machine in the warehouse to `telinit 0`
 
 ## VMware vSphere Client
 Launch the VMware vSphere Client and enable SSH on ESXi01 and ESXi02
