@@ -6,4 +6,12 @@ SKS SW1: 192.168.1.1
 `ssh ciscosks@192.168.1.1`
 Password: con
 
+SKS SW2: 10.1.1.249
+`ssh ciscosks@10.1.1.249`
+Password: over
+
+SKS SW3: 10.1.1.248
+`ssh ciscosks@10.1.1.248`
+Password: over
+
 SKS SW5: 10.1.1.224
