@@ -1,0 +1,9 @@
+<% %>	: executes the ruby code within the brackets
+
+<%= %>  : prints something into an .erb file
+
+<% -%>	: avoids line break after expression
+
+<%# %>	: comments out code within brackets
+
+More Ruby Ruby Learning: https://docs.chef.io/ruby.html
