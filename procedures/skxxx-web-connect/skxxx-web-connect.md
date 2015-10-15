@@ -65,6 +65,7 @@ $ vim /etc/php.ini
 
 ## SELinux
 ```bash
+$ setsebool -P httpd_unified=1
 $ setsebool -P httpd_can_network_connect=1
 $ setsebool -P httpd_can_network_connect_db=1
 $ setsebool -P httpd_can_connect_ldap=1
