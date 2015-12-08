@@ -42,5 +42,8 @@ Execute `\\sksna01\Software\Standalone\PowerShellScripts\ShipStationSetup\ShipSt
 3. The share name should be `[Location]Zebra`
 
 ## Change Database Values
-`UPDATE CS_Portal.ship_station SET ship_label_printer_path='\\\\Prd-ConnectShip\\<New_Zebra_Printer_Share_Name>' WHERE ship_id=#;`
-
+```bash
+UPDATE CS_Portal.ship_station \
+SET ship_label_printer_path='\\\\Prd-ConnectShip\\New_Zebra_Printer_Share_Name' \
+WHERE ship_id=#;
+```

@@ -4,7 +4,9 @@
 
 Run as Administrator: PowerShell
 
-`Add-Computer -DomainName SKS.com -Credential "SKS.com\AdministrativeUser"`
+```bash
+Add-Computer -DomainName SKS.com -Credential "SKS.com\AdministrativeUser"
+```
 
 ### Connect peripherals
 Install the necessary drivers for printers and scanners

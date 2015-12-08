@@ -1,26 +1,26 @@
 # SK591 - How to Setup a New Gmail Account
-## Purpose - Ensure an employee can send and receive messages worldwide
+## Purpose - Create an SKS email account for new employees
 ## Procedure
-Visit https://admin.google.com and sign in with an Administrator SKS Gmail account
+Sign into the Administrator panel: https://admin.google.com
 
-On the Admin Console, select **Users**
+On the Administrator Console, select **Users**
 
-![](admin-console.jpg)
+![Admin Console](admin-console.jpg)\
 
 Left hand column: Select the proper sub-organization for the user
 
-![](sub-organization.jpg)
+![Sub-Organization](sub-organization.jpg)\
 
 \pagebreak
 
 Bottom right hand corner: Click the **Add** button
 
-![](add-user.jpg)
+![Add User](add-user.jpg)\
 
 The following form will be presented
 
-![](user-form.jpg)
+![User Form](user-form.jpg)\
 
 Print out the user credentials
 
-![](print-user.jpg)\
+![Print User Credentials](print-user.jpg)\

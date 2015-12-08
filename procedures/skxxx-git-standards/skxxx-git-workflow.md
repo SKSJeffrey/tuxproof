@@ -7,6 +7,7 @@
 1. $ git fetch upstream
 2. $ git merge upstream/master
 3. $ git checkout -b proj/sks-reports
+3a. $ git add (files)
 4. $ git commit -S
 5. $ git checkout master
 6. $ git merge --no-ff --verify-signatures -S proj/sks-reports
@@ -29,7 +30,7 @@ Once you are done with your changes, you will be committing with a signed GPG ke
 ## 5. $ git checkout master
 After proj/sks-reports is completed, you will have to prepare to merge it back into your local master branch.
 
-## 6. $ git merge \-\-no-ff \-\-verify-signatures proj/sks-reports
+## 6. $ git merge \-\-no-ff \-\-verify-signatures -S proj/sks-reports
 Merging proj/sks-reports back into your local master branch with the recursive strategy. At the same time, the GPG signature will be verified.
 
 ## 7. $ git push origin master
